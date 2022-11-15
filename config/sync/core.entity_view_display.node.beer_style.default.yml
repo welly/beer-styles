@@ -1,0 +1,389 @@
+uuid: f90e6d5d-61db-470d-8f30-e25189cedffe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.beer_style.field_abv
+    - field.field.node.beer_style.field_appearance_clarity
+    - field.field.node.beer_style.field_appearance_colour
+    - field.field.node.beer_style.field_aroma_hops
+    - field.field.node.beer_style.field_aroma_malt
+    - field.field.node.beer_style.field_aroma_yeast
+    - field.field.node.beer_style.field_category
+    - field.field.node.beer_style.field_country
+    - field.field.node.beer_style.field_description
+    - field.field.node.beer_style.field_examples
+    - field.field.node.beer_style.field_finish
+    - field.field.node.beer_style.field_flavour_balance
+    - field.field.node.beer_style.field_flavour_bitterness
+    - field.field.node.beer_style.field_flavour_hops
+    - field.field.node.beer_style.field_flavour_malt
+    - field.field.node.beer_style.field_flavour_yeast
+    - field.field.node.beer_style.field_glassware
+    - field.field.node.beer_style.field_history
+    - field.field.node.beer_style.field_ibu
+    - field.field.node.beer_style.field_ingredient_hops
+    - field.field.node.beer_style.field_ingredient_malt
+    - field.field.node.beer_style.field_ingredient_other
+    - field.field.node.beer_style.field_ingredient_yeast
+    - field.field.node.beer_style.field_mouthfeel_body
+    - field.field.node.beer_style.field_mouthfeel_carbonation
+    - field.field.node.beer_style.field_srm
+    - field.field.node.beer_style.field_style
+    - node.type.beer_style
+  module:
+    - field_group
+    - range
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_attributes:
+      children:
+        - field_glassware
+        - field_country
+        - field_category
+        - field_style
+        - field_abv
+        - field_ibu
+        - field_srm
+      label: Attributes
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        description: ''
+    group_appearance:
+      children:
+        - field_appearance_colour
+        - field_appearance_clarity
+      label: Appearance
+      parent_name: ''
+      region: content
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        description: ''
+    group_aroma:
+      children:
+        - field_aroma_malt
+        - field_aroma_hops
+        - field_aroma_yeast
+      label: Aroma
+      parent_name: ''
+      region: content
+      weight: 3
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        description: ''
+    group_flavour:
+      children:
+        - field_flavour_malt
+        - field_flavour_hops
+        - field_flavour_yeast
+        - field_flavour_bitterness
+        - field_flavour_balance
+      label: Flavour
+      parent_name: ''
+      region: content
+      weight: 4
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        description: ''
+    group_mouthfeel:
+      children:
+        - field_mouthfeel_body
+        - field_mouthfeel_carbonation
+      label: Mouthfeel
+      parent_name: ''
+      region: content
+      weight: 6
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        description: ''
+    group_finish:
+      children:
+        - field_finish
+      label: Aftertaste/Finish
+      parent_name: ''
+      region: content
+      weight: 5
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        description: ''
+    group_ingredients:
+      children:
+        - field_ingredient_malt
+        - field_ingredient_hops
+        - field_ingredient_yeast
+        - field_ingredient_other
+      label: 'Characteristic Ingredients/Processes'
+      parent_name: ''
+      region: content
+      weight: 7
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        description: ''
+id: node.beer_style.default
+targetEntityType: node
+bundle: beer_style
+mode: default
+content:
+  field_abv:
+    type: range_decimal
+    label: above
+    settings:
+      range_separator: '-'
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 1
+      range_combine: true
+      field_prefix_suffix: true
+      from_prefix_suffix: false
+      to_prefix_suffix: false
+      combined_prefix_suffix: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_appearance_clarity:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_appearance_colour:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_aroma_hops:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_aroma_malt:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_aroma_yeast:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_country:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_examples:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 19
+    region: content
+  field_finish:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_flavour_balance:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_flavour_bitterness:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_flavour_hops:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_flavour_malt:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_flavour_yeast:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_glassware:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_history:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_ibu:
+    type: range_integer
+    label: above
+    settings:
+      range_separator: '-'
+      thousand_separator: ''
+      range_combine: true
+      field_prefix_suffix: false
+      from_prefix_suffix: false
+      to_prefix_suffix: false
+      combined_prefix_suffix: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_ingredient_hops:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_ingredient_malt:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_ingredient_other:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_ingredient_yeast:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_mouthfeel_body:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_mouthfeel_carbonation:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_srm:
+    type: range_integer
+    label: above
+    settings:
+      range_separator: '-'
+      thousand_separator: ''
+      range_combine: true
+      field_prefix_suffix: false
+      from_prefix_suffix: false
+      to_prefix_suffix: false
+      combined_prefix_suffix: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_style:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  links: true

@@ -1,0 +1,19 @@
+uuid: 268532c9-5828-4e3f-ae7b-402b0d5de1cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ingredient_malt
+    - node.type.beer_style
+id: node.beer_style.field_ingredient_malt
+field_name: field_ingredient_malt
+entity_type: node
+bundle: beer_style
+label: Malt
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

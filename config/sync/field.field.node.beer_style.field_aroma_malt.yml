@@ -1,0 +1,19 @@
+uuid: 878e37e6-748a-49bb-ba44-92abb4902c8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_aroma_malt
+    - node.type.beer_style
+id: node.beer_style.field_aroma_malt
+field_name: field_aroma_malt
+entity_type: node
+bundle: beer_style
+label: Malt
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

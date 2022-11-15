@@ -1,0 +1,21 @@
+uuid: bb554006-8ae5-4713-85b8-dba474b02dfb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_history
+    - node.type.beer_style
+  module:
+    - text
+id: node.beer_style.field_history
+field_name: field_history
+entity_type: node
+bundle: beer_style
+label: History
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

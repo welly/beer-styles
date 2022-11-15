@@ -1,0 +1,17 @@
+uuid: db89cecd-6908-47d1-87e5-c731fcbdb34f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Beer style'
+type: beer_style
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

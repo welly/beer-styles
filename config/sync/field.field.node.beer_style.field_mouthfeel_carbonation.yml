@@ -1,0 +1,19 @@
+uuid: 490d18a7-94c0-423e-b1bb-c1f336ab505f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mouthfeel_carbonation
+    - node.type.beer_style
+id: node.beer_style.field_mouthfeel_carbonation
+field_name: field_mouthfeel_carbonation
+entity_type: node
+bundle: beer_style
+label: Carbonation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

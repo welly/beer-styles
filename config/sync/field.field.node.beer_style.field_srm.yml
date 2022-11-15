@@ -1,0 +1,35 @@
+uuid: cdc2a949-3339-4440-b993-02902d9b6c70
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_srm
+    - node.type.beer_style
+  module:
+    - range
+id: node.beer_style.field_srm
+field_name: field_srm
+entity_type: node
+bundle: beer_style
+label: SRM
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  field:
+    prefix: ''
+    suffix: ''
+  from:
+    prefix: ''
+    suffix: ''
+  to:
+    prefix: ''
+    suffix: ''
+  combined:
+    prefix: ''
+    suffix: ''
+field_type: range_integer

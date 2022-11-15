@@ -1,0 +1,19 @@
+uuid: 628da352-b4c8-41d8-ba56-e975123f0911
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_flavour_balance
+    - node.type.beer_style
+id: node.beer_style.field_flavour_balance
+field_name: field_flavour_balance
+entity_type: node
+bundle: beer_style
+label: Balance
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

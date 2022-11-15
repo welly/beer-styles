@@ -1,0 +1,19 @@
+uuid: 0fea1f0f-0314-46fe-9ef9-1396cfef973f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ingredient_other
+    - node.type.beer_style
+id: node.beer_style.field_ingredient_other
+field_name: field_ingredient_other
+entity_type: node
+bundle: beer_style
+label: Other
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

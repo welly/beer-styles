@@ -1,0 +1,19 @@
+uuid: 4de27631-8984-4182-b6a9-0f5b463c79fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_flavour_bitterness
+    - node.type.beer_style
+id: node.beer_style.field_flavour_bitterness
+field_name: field_flavour_bitterness
+entity_type: node
+bundle: beer_style
+label: 'Perceived bitterness'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

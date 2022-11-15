@@ -1,0 +1,19 @@
+uuid: 91a03265-d7bd-449a-bc5d-3e0c2b6b8ff9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_appearance_clarity
+    - node.type.beer_style
+id: node.beer_style.field_appearance_clarity
+field_name: field_appearance_clarity
+entity_type: node
+bundle: beer_style
+label: Clarity
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

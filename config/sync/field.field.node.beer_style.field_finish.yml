@@ -1,0 +1,19 @@
+uuid: defa240b-097e-495c-9169-253a4c58cb9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_finish
+    - node.type.beer_style
+id: node.beer_style.field_finish
+field_name: field_finish
+entity_type: node
+bundle: beer_style
+label: Finish
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

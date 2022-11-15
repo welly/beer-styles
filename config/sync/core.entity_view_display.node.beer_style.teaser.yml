@@ -1,0 +1,74 @@
+uuid: 80d97450-9a28-471f-acf4-daeaa7f58eac
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.beer_style.field_abv
+    - field.field.node.beer_style.field_appearance_clarity
+    - field.field.node.beer_style.field_appearance_colour
+    - field.field.node.beer_style.field_aroma_hops
+    - field.field.node.beer_style.field_aroma_malt
+    - field.field.node.beer_style.field_aroma_yeast
+    - field.field.node.beer_style.field_category
+    - field.field.node.beer_style.field_country
+    - field.field.node.beer_style.field_description
+    - field.field.node.beer_style.field_examples
+    - field.field.node.beer_style.field_finish
+    - field.field.node.beer_style.field_flavour_balance
+    - field.field.node.beer_style.field_flavour_bitterness
+    - field.field.node.beer_style.field_flavour_hops
+    - field.field.node.beer_style.field_flavour_malt
+    - field.field.node.beer_style.field_flavour_yeast
+    - field.field.node.beer_style.field_glassware
+    - field.field.node.beer_style.field_history
+    - field.field.node.beer_style.field_ibu
+    - field.field.node.beer_style.field_ingredient_hops
+    - field.field.node.beer_style.field_ingredient_malt
+    - field.field.node.beer_style.field_ingredient_other
+    - field.field.node.beer_style.field_ingredient_yeast
+    - field.field.node.beer_style.field_mouthfeel_body
+    - field.field.node.beer_style.field_mouthfeel_carbonation
+    - field.field.node.beer_style.field_srm
+    - field.field.node.beer_style.field_style
+    - node.type.beer_style
+  module:
+    - user
+id: node.beer_style.teaser
+targetEntityType: node
+bundle: beer_style
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_abv: true
+  field_appearance_clarity: true
+  field_appearance_colour: true
+  field_aroma_hops: true
+  field_aroma_malt: true
+  field_aroma_yeast: true
+  field_category: true
+  field_country: true
+  field_description: true
+  field_examples: true
+  field_finish: true
+  field_flavour_balance: true
+  field_flavour_bitterness: true
+  field_flavour_hops: true
+  field_flavour_malt: true
+  field_flavour_yeast: true
+  field_glassware: true
+  field_history: true
+  field_ibu: true
+  field_ingredient_hops: true
+  field_ingredient_malt: true
+  field_ingredient_other: true
+  field_ingredient_yeast: true
+  field_mouthfeel_body: true
+  field_mouthfeel_carbonation: true
+  field_srm: true
+  field_style: true

@@ -1,0 +1,19 @@
+uuid: eedf6e0d-4663-4c16-b66b-14e096f5ea1e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - range
+id: node.field_srm
+field_name: field_srm
+entity_type: node
+type: range_integer
+settings: {  }
+module: range
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

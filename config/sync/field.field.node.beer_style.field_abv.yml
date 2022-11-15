@@ -1,0 +1,35 @@
+uuid: 378de192-f1f2-48a2-a318-e0f3eb525df2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_abv
+    - node.type.beer_style
+  module:
+    - range
+id: node.beer_style.field_abv
+field_name: field_abv
+entity_type: node
+bundle: beer_style
+label: ABV
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  field:
+    prefix: ''
+    suffix: '%'
+  from:
+    prefix: ''
+    suffix: ''
+  to:
+    prefix: ''
+    suffix: ''
+  combined:
+    prefix: ''
+    suffix: ''
+field_type: range_float

@@ -1,0 +1,21 @@
+uuid: db33dbfb-2e61-427c-a401-28f8328a1e53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.beer_style
+  module:
+    - text
+id: node.beer_style.field_description
+field_name: field_description
+entity_type: node
+bundle: beer_style
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

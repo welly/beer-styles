@@ -1,0 +1,8 @@
+uuid: 62ebac72-dd84-4484-99d6-2fe6f9f5969e
+langcode: en
+status: true
+dependencies: {  }
+name: Style
+vid: style
+description: ''
+weight: 0

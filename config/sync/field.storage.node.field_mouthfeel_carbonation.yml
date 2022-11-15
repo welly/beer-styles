@@ -1,0 +1,21 @@
+uuid: 39e0a4e6-1b68-4a2b-90dd-4242b02c922a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_mouthfeel_carbonation
+field_name: field_mouthfeel_carbonation
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

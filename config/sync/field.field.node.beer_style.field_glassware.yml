@@ -1,0 +1,29 @@
+uuid: a4c93368-838b-4387-8692-20ae6f75b9c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_glassware
+    - node.type.beer_style
+    - taxonomy.vocabulary.glassware
+id: node.beer_style.field_glassware
+field_name: field_glassware
+entity_type: node
+bundle: beer_style
+label: Glassware
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      glassware: glassware
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,29 @@
+uuid: 7cd024d2-2eaa-48e6-8f55-71fbea0060df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_style
+    - node.type.beer_style
+    - taxonomy.vocabulary.style
+id: node.beer_style.field_style
+field_name: field_style
+entity_type: node
+bundle: beer_style
+label: Style
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      style: style
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
